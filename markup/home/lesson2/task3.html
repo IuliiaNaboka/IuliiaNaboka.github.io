@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+<body>
+<form action="url" enctype="multipart/form-data" method="post">
+    <p>Name</p>
+    <input type="text" name="myname"/>
+    <p>Email</p>
+    <input type="email" name="myemail"/>
+    <p>Sex</p>
+    <input type="radio" name="m"/>Male
+    <input type="radio" name="f"/>Female<br/>
+    <p>Current status</p>
+    <input type="checkbox" name="st"/>Student<br/>
+    <input type="checkbox" name="emp"/>Employed<br/>
+    <input type="checkbox" name="unemp"/>Unemployed<br/>
+    <p>Month and Year of birth</p>
+    <select name="month">
+        <option selected value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+    </select>
+    <select name="year">
+        <option selected value="84">1984</option>
+        <option value="85">1985</option>
+        <option value="86">1986</option>
+    </select><br/>
+    <p>Skills and Technologies</p>
+    <select name="skills" size="10" multiple="multiple">
+        <optgroup label="Tech Skills">
+            <option value="h">HTML</option>
+            <option value="c">CSS</option>
+            <option value="j">Java Script</option>
+            <option value="g">Git</option>
+        </optgroup>
+        <optgroup label="Soft Skills">
+            <option value="tm">Time management</option>
+            <option value="pro">Proactivity</option>
+            <option value="team">Teamwork</option>
+            <option value="lead">Leadership</option>
+        </optgroup>
+    </select>
+    <p>Photo</p>
+    <input type="file" name="myphoto" accept="image/*"/>
+    <!-- <input type="submit" value="Choose file" accept="image/*"/>-->
+    No file choosen<br/>
+    <p>Comments</p>
+    <textarea cols="18" rows="10" name="comments"></textarea><br/>
+    <input type="submit" value="Save"/>
+</form>
+</body>
+</html>

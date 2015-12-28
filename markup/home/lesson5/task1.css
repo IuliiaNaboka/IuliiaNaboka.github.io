@@ -1,0 +1,43 @@
+div{
+    width: 100%;
+    background-color: #1E90FF;
+}
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+li ul {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 8px;
+    width: 100%;
+}
+.level2 a {
+    background-color: #DCDCDC;
+    color: #A9A9A9;
+    font-size: 14px;
+    padding: 10px;
+}
+a {
+    color: #fff;
+    font-family: Impact;
+    font-size: 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #DCDCDC;
+    color: #A9A9A9;
+    padding: 10px;
+    border: 1px solid #DCDCDC;
+}
+li:hover ul {
+    display: inline-block;
+    background-color: #DCDCDC;
+    color: #A9A9A9;
+}

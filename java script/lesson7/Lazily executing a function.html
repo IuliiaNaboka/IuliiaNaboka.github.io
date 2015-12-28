@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lazily executing a function</title>
+</head>
+<body>
+<script>
+    var make_lazy = function () {
+        var args=arguments;
+        return function () {
+            return args[0].apply(args, [].splice.call(args,1));
+        }
+
+    };
+</script>
+</body>
+</html>

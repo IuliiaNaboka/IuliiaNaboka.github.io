@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1</title>
+</head>
+<body>
+<script>
+    var tasksCompleted = {
+        'Anna': 29,
+        'Serg': 35,
+        'Elena': 1,
+        'Anton': 99
+    };
+
+    var maxValue=0, bestEmployee;
+
+    for (var keyName in tasksCompleted) {
+
+        if (tasksCompleted[keyName]>maxValue) {
+            maxValue=tasksCompleted[keyName];
+            bestEmployee=keyName;
+        }
+
+    }
+    console.log(bestEmployee);
+
+</script>
+</body>
+</html>

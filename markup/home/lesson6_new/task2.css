@@ -1,0 +1,86 @@
+body {
+    margin: 0 auto;
+    width: 1400px;
+    padding: 0;
+}
+.testimonials {
+    width: 1023px;
+    background-image: url("images/bg.png");
+    background-size: contain;
+    font-family: Trebuchet MS;
+}
+.testimonials h2 {
+    color: #3170a8;
+    font-family: Trebuchet MS;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+.testimonials .first_word {
+    color: #da7728;
+}
+.review1,.review2 {
+    width: 490px;
+    position: relative;
+
+}
+.review1 {
+    margin-right: 30px;
+}
+.review2 {
+    margin-right: 0;
+}
+.photo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.speech:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    left: 110px;
+    top: 42px;
+}
+.speech {
+    width: 364px;
+    background: #fff;
+    margin-left: 125px;
+    overflow: hidden;
+}
+.review1,.review2,.photo,.speech {
+    display: inline-block;
+}
+.testimonials h3 {
+    color: #3070a8;
+    font-style: italic;
+    font-size: 16px;
+    padding: 0 20px;
+}
+.name {
+    float: left;
+}
+.client {
+    float: right;
+}
+.testimonials .header {
+    overflow: hidden;
+    height: 38px;
+}
+.testimonials hr {
+    clear: both;
+    border: dashed 1px #808080;
+}
+.testimonials p {
+    clear: both;
+    color: #8a8a8a;
+    font-size: 16px;
+    text-align: justify;
+    padding: 0 10px;
+}

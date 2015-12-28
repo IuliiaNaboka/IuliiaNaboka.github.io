@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task3</title>
+</head>
+<body>
+<script>
+    var login=prompt('Enter your login');
+
+    if (login=='admin') {
+       var password=prompt('Enter your password');
+        if (password==='passw0rd') {
+            alert('Welcome home!');
+        }
+        else {
+            alert('Wrong password')
+        }
+    }
+    else if (login==null) {
+        alert('Canceled');
+    }
+    else {
+        alert('Access denied');
+    }
+
+
+</script>
+</body>
+</html>

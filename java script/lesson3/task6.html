@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task6</title>
+</head>
+<body>
+<script>
+    function pow1(x, n) {
+        if(n != 1) {
+            return x * pow1(x, n - 1);
+        } else {
+            return x;
+        }
+    }
+    console.log(pow1(3, 2));
+
+    function pow2(x, n) {
+        if(n != 1) {
+            return x * pow2(x, n - 1);
+        } else {
+            return x;
+        }
+    }
+    console.log(pow2(1, 100));
+</script>
+</body>
+</html>

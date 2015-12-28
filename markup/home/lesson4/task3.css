@@ -1,0 +1,23 @@
+div {
+    width: 750PX;
+    background-color: #DCDCDC;
+}
+li {
+    display: inline-block;
+    margin: 10px;
+    background-color: #DCDCDC;
+}
+a {
+    text-decoration: none;
+    color: #8A2BE2;
+}
+.bord {
+    border: 1px solid DarkGray;
+    padding: 5px 8px;
+    border-radius: 8px
+}
+.bord:hover {
+    background-color: #8A2BE2;
+    color: #fff;
+}
+

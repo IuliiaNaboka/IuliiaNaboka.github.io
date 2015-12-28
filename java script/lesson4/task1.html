@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1</title>
+</head>
+<body>
+<script>
+    function fib(n) {
+        var a=1, b=1, c, counter;
+        for (counter=3; counter<=n; counter++) {
+            c=a+b;
+            a=b;
+            b=c;
+
+        }
+        console.log (c);
+    }
+
+    fib(3);
+    fib(7);
+    fib(77);
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+.content {
+    margin: 0 auto;
+    width: 900px;
+}
+h2 {
+    text-transform: uppercase;
+    color: #41525c;
+    font: bold 30px Trebuchet MS;
+    text-align: center;
+    padding: 30px 0 40px;
+}
+.conteiner1,.conteiner2,.conteiner3 {
+    width: 294px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Trebuchet MS;
+    display: inline-block;
+    position: relative;
+}
+.conteiner1,.conteiner3 {
+    border: 1px solid #e8eaec;
+}
+.conteiner2 {
+    border: 3px solid #ee8129;
+    z-index: 2;
+    box-shadow: 0 0 8px #cde2ee;
+}
+.conteiner1 {
+    margin-right: -7px;
+}
+.conteiner3 {
+    margin-left: -7px;
+    z-index: 1;
+}
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.conteiner1>.header {
+    background-color: #37c2d3;
+    padding: 24px 0 20px 0;
+}
+.conteiner2>.header {
+    background-color: #ee8129;
+    padding: 30px;
+}
+.conteiner3>.header {
+    background-color: #1cb79a;
+    padding: 24px 0 20px 0;
+}
+h3 {
+    padding: 15px;
+    font-size: 24px;
+}
+.price {
+    font-size: 72px;
+    font-weight: bold;
+}
+.price:before {
+    content: "$";
+    font-size: 24px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.price:after {
+    content: "Monthly";
+    font-size: 20px;
+    vertical-align: bottom;
+    padding-left: 10px;
+}
+.list {
+    width: 260px;
+    margin-left: -20px;
+}
+li {
+    list-style-type: none;
+    text-align: left;
+    padding: 10px 0 10px 25px;
+    margin-bottom: 3px;
+}
+li:before {
+    content: url(images/bul.png);
+    margin-left: 20px;
+    margin-right: 15px;
+}
+li:nth-child(odd) {
+    background-color: #edf5fd;
+}
+li:nth-child(even) {
+    background-color: #f5f5f6;
+}
+button {
+    width: 250px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.conteiner2>button {
+    background-color: #ee8129;
+    border: 2px solid #ee8129;
+    border-bottom: 4px solid #b3560b;
+}
+.conteiner1>button,.conteiner3>button {
+    background-color: #3371a6;
+    border: 2px solid #3371a6;
+    border-bottom: 4px solid #16436a;
+}

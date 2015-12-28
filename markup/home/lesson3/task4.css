@@ -1,0 +1,12 @@
+a[href$=".com"]{
+    color: #666;;
+}
+a[href$=".ru"]{
+    color: #f70;
+}
+a[target="_blank"]:after { content: " \2197";
+    display: inline-block;
+}
+
+
+

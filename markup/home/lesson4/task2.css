@@ -1,0 +1,30 @@
+div {
+    width: 100%;
+}
+.menu {
+    width: 900px;
+    background-color: #BA55D3;
+    margin: 0 auto;
+    position: relative;
+}
+ul li {
+    display: inline-block;
+    padding: 10px;
+    background-color: #BA55D3;
+    float: left;
+}
+a {
+    color: #fff;
+    font-family: Impact;
+    font-size: 16px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #DCDCDC;
+    color: #696969;
+    padding: 10px;
+    border: 1px solid #DCDCDC;
+}
+li:first-child {
+    float: right;
+}

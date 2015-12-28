@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2-lesson4</title>
+</head>
+<body>
+<script>
+    var line=prompt('Введите фразу');
+    function checkSpam(line) {
+        var line=line.toLowerCase();
+        if (~line.indexOf('sex') || ~line.indexOf('spam')) {
+            alert ('true');
+        } else {
+            alert ('false');
+        }
+    }
+    checkSpam(line);
+</script>
+</body>
+</html>
