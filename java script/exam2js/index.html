@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div id="homeArrow">
+    <a href="#logotype">
+    <img class="arrow" src="images/upArrow.png" alt="back home">
+    </a>
+</div>
+<!--HEADER-->
+<header>
+    <div class="menuColor">
+<div class="logo" id="logotype">
+    MY<span>FOLIO</span>
+</div>
+    <nav>
+        <div class="navigation">
+            <ul class="mainMenu">
+                <li><a href="#logotype">home</a></li>
+                <li><a href="#aboutMe">about me</a></li>
+                <li><a href="#myService">services</a></li>
+                <li><a href="#myPortfolio">my work</a></li>
+                <li><a href="#myContacts">contact me</a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    <div class="bigBanner">
+        <p>Lorem ipsum dolor sit iusmod tempor <br />
+            <span class="bigTitle">incididunt bore</span> <br />
+            <span class="smallTitle">Orem ipsum dolor sit amet, consectetur</span></p>
+        <button>know more</button>
+    </div>
+</header> <!--end header-->
+
+<!--ABOUT ME-->
+<div class="about">
+    <h2 id="aboutMe">about me</h2>
+    <div class="decor">~~~~~~~~::~~~~~~~~</div>
+    <p class="textAbout">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, <span>quis nostrud exercitation ullamco</span> laboris nisi ut aliquip
+        ex ea commodo consequat duis aute irure dolor.</p>
+
+    <div class="skills">
+        <ul>
+       <li>
+           <div class="itemSkills">
+           <div class="itemNumber light"></div>
+        <h3>Title goes here</h3>
+        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.</p>
+           </div>
+       </li>
+
+       <li>
+           <div class="itemSkills">
+           <div class="itemNumber pencil"></div>
+        <h3>Title goes here</h3>
+        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+               </div>
+       </li>
+
+       <li>
+           <div class="itemSkills">
+           <div class="itemNumber wheel"></div>
+        <h3>Title goes here</h3>
+        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.</p>
+       </div>
+       </li>
+
+       <li>
+          <div class="itemSkills">
+          <div class="itemNumber screen"></div>
+        <h3>Title goes here</h3>
+        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.</p>
+              </div>
+      </li>
+        </ul>
+    </div>
+    </div> <!--end class about-->
+
+<!--SERVICES-->
+<div class="serviceBan">
+    <img src="images/servicesBanner.jpg" alt="my skills">
+</div>
+
+    <div class="services">
+        <h2 id="myService">services</h2>
+        <div class="decor">~~~~~~~~::~~~~~~~~</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="scope first">
+            <div class="scopeIcon globe"></div>
+            <h3>Title goes here</h3>
+            <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                et dolorerserss eerhfre mag.</p>
+        </div>
+
+        <div class="scope second">
+            <div class="scopeIcon search"></div>
+            <h3>Title goes here</h3>
+            <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                et dolorerserss eerhfre mag.</p>
+        </div>
+
+        <div class="scope third">
+            <div class="scopeIcon clock"></div>
+            <h3>Title goes here</h3>
+            <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                et dolorerserss eerhfre mag.</p>
+        </div>
+
+        <div class="scope fourth">
+            <div class="scopeIcon chart"></div>
+            <h3>Title goes here</h3>
+            <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                et dolorerserss eerhfre mag.</p>
+        </div>
+    </div> <!--end class services-->
+<!--MY WORK-->
+    <div class="work">
+        <h2 id="myPortfolio">MY WORK</h2>
+        <div class="decor">~~~~~~~~::~~~~~~~~</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.</p>
+
+        <div id=carousel>
+            <figure id=spinner>
+                <img src="images/pic1.jpg" alt="">
+                <img src="images/pic2.jpg" alt="">
+                <img src="images/pic3.jpg" alt="">
+                <img src="images/pic4.jpg" alt="">
+                <img src="images/pic5.jpg" alt="">
+                <img src="images/pic6.jpg" alt="">
+                <img src="images/pic7.jpg" alt="">
+                <img src="images/pic8.jpg" alt="">
+            </figure>
+        </div>
+        <span style=float:left class=ss-icon onclick="galleryspin('-')">&lt;</span>
+        <span style=float:right class=ss-icon onclick="galleryspin('')">&gt;</span>
+
+    </div> <!--end class work-->
+<!--CONTACTS-->
+    <div class="contacts">
+        <h2 id="myContacts">CONTACT ME</h2>
+        <div class="decor">~~~~~~~~::~~~~~~~~</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.</p>
+<div class="formWrapper">
+        <!--form message-->
+        <form method="POST" id="feedback-form">
+            NAME
+            <input type="text" name="nameFF" required placeholder="Your name" x-autocompletetype="name">
+            EMAIL ADDRESS
+            <input type="email" name="contactFF" required placeholder="Your e-mail" x-autocompletetype="email">
+            MESSAGE
+            <textarea name="messageFF" required rows="5"></textarea>
+                <input type="submit" value="SUBMIT">
+        </form>
+        <!--end form message-->
+</div>
+    </div> <!--end class contacts-->
+<!--FOOTER-->
+    <footer>
+        <div class="footerMenu">
+            <ul>
+                <li><a href="#logotype">home</a></li>
+                <li><a href="#aboutMe">about me</a></li>
+                <li><a href="#myService">services</a></li>
+                <li><a href="#myPortfolio">my work</a></li>
+                <li><a href="#myContacts">contact me</a></li>
+            </ul>
+        </div>
+
+        <a href="#"><div class="facebookIcon"></div></a>
+        <a href="#"><div class="googleIcon"></div></a>
+        <a href="#"><div class="linkedInIcon"></div></a>
+        <a href="#"><div class="twitterIcon"></div></a>
+
+        <p class="copyRight">© Copyright 2015 MYFOLIO. All rights reserved.</p>
+    </footer>
+
+<script src="slider.js"></script>
+
+</body>
+</html>
