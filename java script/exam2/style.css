@@ -1,0 +1,684 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #7e8287;
+}
+a, button {
+    cursor: pointer;
+}
+h2 {
+    text-transform: uppercase;
+    color: #139a95;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 800;
+
+}
+body {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.arrow {
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    z-index: 2;
+}
+/*HEADER*/
+.navigation {
+    width: 100%;
+    overflow: hidden;
+    background-color: #2caba7;
+    position: relative;
+}
+.logo {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+}
+#logotype span {
+    color: #e8e34e;
+    font-size: 24px;
+}
+#mainMenu, #mainMenu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 5px;
+}
+#mainMenu {
+    float: right;
+}
+#mainMenu > li {
+    float: left;
+    margin-bottom: 5px;
+    text-align: left;
+}
+#mainMenu li a {
+    display: inline-block;
+    text-decoration: none;
+    white-space: normal;
+}
+#mainMenu > li > a {
+    color: #fff;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 50px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+#mainMenu > li:hover > a, #mainMenu > a:hover {
+    color: #e8e34e;
+}
+.bigBanner {
+    background: url("images/mainBanner.jpg") no-repeat;
+    height: 730px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.bigBanner p {
+    color: #fff;
+}
+.bigTitle {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 15px;
+    color: #fff;
+}
+.smallTitle {
+    font-size: 0.7em;
+    color: #fff;
+}
+.bigBanner button {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 4px;
+    background-color: #ebe651;
+    border: 3px solid #ebe651;
+    border-radius: 1px;
+    margin-top: 50px;
+    width: 196px;
+    height: 48px;
+}
+.bigBanner button:hover {
+    box-shadow: 0 0 10px #cfc91d;
+}
+/*ABOUT*/
+.textAbout span {
+    font-size: 20px;
+    font-weight: 700;
+}
+.itemSkills {
+    position: relative;
+}
+.itemSkills h3 {
+    padding-bottom: 30px;
+}
+.itemSkills p{
+    padding: 0 20px;
+    line-height: 1.5;
+    font-size: 12px;
+}
+.light {
+    background: url("images/iconsSprite.png")no-repeat -12px -16px;
+    width: 31px;
+    height: 33px;
+}
+.pencil {
+    background: url("images/iconsSprite.png")no-repeat -64px -17px;
+    width: 32px;
+    height: 32px;
+}
+.wheel {
+    background: url("images/iconsSprite.png")no-repeat -112px -17px;
+    width: 32px;
+    height: 32px;
+}
+.screen {
+    background: url("images/iconsSprite.png")no-repeat -165px -21px;
+    width: 32px;
+    height: 23px;
+}
+.itemNumber {
+    position: relative;
+    top: 10px;
+    left: 45%;
+}
+/*SERVICES*/
+.services {
+    background-color: #ebebe5;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+.serviceText > .decor {
+    padding-left: 90px;
+}
+.scopeIcon {
+    margin-bottom: 20px;
+}
+.scope h3 {
+    margin-bottom: 30px;
+}
+.globe {
+    background: url('images/iconsSprite.png') no-repeat -14px -74px;
+    width: 28px;
+    height: 33px;
+}
+.search {
+    background: url('images/iconsSprite.png') no-repeat -63px -74px;
+    width: 32px;
+    height: 32px;
+}
+.clock {
+    background: url('images/iconsSprite.png') no-repeat -110px -72px;
+    width: 32px;
+    height: 33px;
+}
+.chart {
+    background: url('images/iconsSprite.png') no-repeat -164px -72px;
+    width: 26px;
+    height: 29px;
+}
+.scope p {
+    font-size: 12px;
+    line-height: 2;
+    padding-bottom: 20px;
+}
+/*MY WORK*/
+.work {
+    clear: both;
+}
+.work p,.contacts p{
+    width: 60%;
+    padding-left: 20%;
+}
+div#carousel {
+    perspective: 1200px;
+    background: #ebebe5;
+    padding-top: 10%;
+    font-size:0;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+figure#spinner {
+    transform-style: preserve-3d;
+    height: 300px;
+    transform-origin: 50% 50% -500px;
+    transition: 1s;
+}
+figure#spinner img {
+    width: 40%; max-width: 425px;
+    position: absolute; left: 30%;
+    transform-origin: 50% 50% -500px;
+    outline:1px solid transparent;
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg);
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span {
+    color: #2caba7;
+    margin: 5%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.6s color;
+    position: relative;
+    margin-top: -6rem;
+    border-bottom: none;
+    line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+/*CONTACTS*/
+#feedback-form {
+    max-width: 400px;
+    padding: 2%;
+   /* margin-left: 30%; */
+    border-radius: 3px;
+    background: #353030;
+    color: #dfdfdf;
+}
+#feedback-form [required] {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 2px 0 2% 0;
+    padding: 2%;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 transparent;
+}
+#feedback-form [required]:hover {
+    border-color: #cfc91d;
+    box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 transparent;
+}
+#feedback-form [required]:focus {
+    outline: none;
+    border-color: #cfc91d;
+    box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 4px rgba(207,201,29,.5);
+    transition: .2s linear;
+}
+#feedback-form [type="submit"] {
+    padding: 2%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2) inset;
+    background: #e8e34e;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+#feedback-form [type="submit"]:hover {
+    box-shadow: 0 0 10px #cfc91d;
+    cursor: pointer;
+}
+#feedback-form [type="submit"]:focus {
+    box-shadow: 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+}
+.formWrapper {
+    background-color: #312d2d;
+}
+/*FOOTER*/
+footer {
+   background-color: #2e2e2e;
+}
+.footerMenu a {
+    text-transform: capitalize;
+    color: #dfdfdf;
+}
+.footerMenu a:hover {
+    text-decoration: underline;
+}
+.footerMenu li{
+    padding: 40px 40px 20px 40px;
+    display: inline-block;
+}
+.footerMenu ul{
+    text-align: center;
+}
+.copyRight {
+    color: #dfdfdf;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.facebookIcon {
+    background: url('images/iconsNets.png') no-repeat -4px -3px;
+    width: 32px;
+    height: 32px;
+}
+.googleIcon {
+    background: url('images/iconsNets.png') no-repeat -48px -3px;
+    width: 32px;
+    height: 32px;
+}
+.linkedInIcon {
+    background: url('images/iconsNets.png') no-repeat -93px -2px;
+    width: 32px;
+    height: 32px;
+}
+.twitterIcon {
+    background: url('images/iconsNets.png') no-repeat -139px -3px;
+    width: 32px;
+    height: 32px;
+}
+
+
+/*MEDIA QUERIES*/
+/*MOBILE STYLES*/
+@media only screen and (max-width:480px) {
+    h2 {
+        font-size: 1.4em;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .arrow {
+        width: 30px;
+        height: 30px;
+    }
+    .decor {
+        display: none;
+    }
+    .itemNumber,.scopeIcon {
+        transform: scale(0.8, 0.8);
+        -o-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+        -moz-transform: scale(0.8, 0.8);
+        -webkit-transform: scale(0.8, 0.8);
+    }
+    /*HEADER*/
+    #logotype {
+        padding-bottom: 15px;
+        padding-top: 10px;
+        padding-left: 60%;
+    }
+    #mainMenu {
+        width: 100%;
+    }
+    #mainMenu > li {
+        float: none;
+        border-bottom: 0;
+        margin-bottom: 0;
+        font-size: 2em;
+        font-weight: 900;
+    }
+    .bigBanner {
+        height: 170px;
+    }
+    .bigBanner p{
+        font-size: 0.7em;
+        padding-top: 15px;
+    }
+    .bigTitle {
+        font-size: 1.5em;
+    }
+    .bigBanner button {
+        margin-top: 30px;
+        width: 150px;
+        height: 40px;
+    }
+    /*ABOUT*/
+    .about {
+        margin-bottom: 10px;
+    }
+    .about h2 {
+        margin-top: 10px;
+    }
+    .textAbout {
+        line-height: 1.5;
+        margin-bottom: 30px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .skills li {
+        display: block;
+        width: 95%;
+        margin-left: 5%;
+    }
+    .itemSkills {
+        height: 120px;
+    }
+    .itemNumber {
+        position: relative;
+        top: 20px;
+        left: 15%;
+    }
+  /*  .itemSkills h3 {
+        padding-bottom:
+    }
+    .itemSkills p{
+        padding: ;
+        line-height: ;
+        font-size: ;
+    } */
+    /*SERVICES*/
+     .serviceBan {
+        background: url("images/servicesBannerMob.jpg") no-repeat;
+        height: 180px;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .serviceText > p {
+        width: 90%;
+        line-height: 1.3;
+        padding-left: 15px;
+        padding-bottom: 5px;
+    }
+    .scope {
+        display: block;
+        width: 95%;
+        padding: 10px 15px 10px 15px;
+    /*    margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 40px;   */
+    }
+    .services h2 {
+        padding: 20px 0 10px 30px;
+    }
+    /*MY WORK*/
+    .work p,.contacts p{
+        line-height: 1.3;
+        padding-bottom: 10px;
+    }
+    /*FOOTER*/
+    #feedback-form {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .footerMenu {
+        display: none;
+    }
+    .facebookIcon,.googleIcon,.linkedInIcon,.twitterIcon {
+        display: inline-block;
+        margin: 12px;
+        transform: scale(1.1, 1.1);
+    }
+} /*END MOBILE STYLES*/
+
+
+/*TABLET STYLES*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    h2 {
+        font-size: 1.8em;
+      /*  padding-bottom: 10px; */
+        padding: 10px 0;
+    }
+    .decor {
+        margin-bottom: 20px;
+    }
+    .arrow {
+        width: 32px;
+        height: 32px;
+    }
+    .itemNumber,.scopeIcon {
+        transform: scale(0.8, 0.8);
+        -o-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+        -moz-transform: scale(0.8, 0.8);
+        -webkit-transform: scale(0.8, 0.8);
+    }
+    /*HEADER*/
+    #logotype {
+        padding: 5px 0;
+    }
+    #mainMenu > li > a {
+        padding: 0 12px;
+    }
+    .bigBanner {
+        height: 300px;
+    }
+    .bigBanner p{
+        font-size: 0.8em;
+        padding-top: 90px;
+    }
+    .bigTitle {
+        font-size: 1.8em;
+    }
+    /*ABOUT*/
+    .about {
+        margin-bottom: 30px;
+    }
+    .textAbout {
+        line-height: 2;
+        margin-bottom: 50px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .skills li {
+        display: inline-block;
+        width: 40%;
+    }
+    .itemSkills {
+        height: 160px;
+    }
+    .itemSkills h3, .itemSkills p {
+        position: relative;
+        top: 30px;
+    }
+    /*SERVICES*/
+    .serviceBan {
+        background: url("images/servicesBannerTablet.jpg") no-repeat;
+        height: 300px;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .services h2 {
+        padding: 30px 0 20px 90px;
+    }
+    .serviceText {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .serviceText > p {
+        width: 90%;
+        line-height: 1.5;
+        padding-left: 20px;
+        padding-bottom: 15px;
+    }
+    .scope {
+        display: inline-block;
+        width: 40%;
+      /*  margin-left: 7%;  */
+        margin-bottom: 40px;
+    }
+    /*MY WORK*/
+    .work {
+        margin-top: 20px;
+    }
+    .work p,.contacts p{
+        line-height: 2;
+        padding-bottom: 20px;
+    }
+    /*FOOTER*/
+    #feedback-form {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .footerMenu {
+        display: none;
+    }
+    .facebookIcon,.googleIcon,.linkedInIcon,.twitterIcon {
+        display: inline-block;
+        margin: 12px;
+        transform: scale(1.2, 1.2);
+    }
+} /*END TABLET STYLES*/
+
+
+/*DESKTOP STYLES*/
+@media only screeN and (min-width: 769px) {
+    h2 {
+        font-size: 2.2em;
+        padding-bottom: 30px;
+    }
+    .decor {
+        margin-bottom: 40px;
+    }
+    /*HEADER*/
+    .logo {
+        float: left;
+        top: 20px;
+        left: 30px;
+        font-weight: 600;
+    }
+    .bigBanner p {
+        font-size: 1em;
+        padding-top: 190px;
+        line-height: 1.2;
+    }
+    .bigTitle {
+        font-size: 2.4em;
+    }
+    /*ABOUT*/
+    .about {
+        margin-bottom: 90px;
+    }
+    .about h2{
+        margin-top: 90px;
+    }
+    .textAbout {
+        line-height: 3;
+        margin-bottom: 74px;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .skills li {
+        display: inline-block;
+        width: 20%;
+    }
+    .skills li:nth-child(1),.skills li:nth-child(2),.skills li:nth-child(3) {
+        border-right: 1px solid #c2cccc;
+    }
+    .itemSkills h3, .itemSkills p {
+        position: relative;
+        top: 60px;
+    }
+    .itemSkills {
+        height: 250px;
+    }
+    /*SERVICES*/
+    .services {
+        margin-bottom: 90px;
+        padding-bottom: 54px;
+    }
+    .serviceBan {
+        background: url("images/servicesBanner.jpg") no-repeat;
+        width: 635px;
+        height: 860px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .serviceText {
+        width: 50%;
+    }
+    .services h2 {
+        padding: 68px 0 50px 90px;
+    }
+    .scope {
+        display: inline-block;
+        width: 25%;
+        margin-left: 90px;
+        margin-bottom: 40px;
+    }
+    .serviceText > p {
+        width: 80%;
+        line-height: 2;
+        padding-left: 90px;
+        padding-bottom: 50px;
+    }
+    /*MY WORK*/
+    .work p,.contacts p{
+        line-height: 3;
+        padding-bottom: 40px;
+    }
+    /*FOOTER*/
+    #feedback-form {
+        margin-left: 30%;
+    }
+    .facebookIcon,.googleIcon,.linkedInIcon,.twitterIcon {
+        display: inline-block;
+        margin: 10px;
+    }
+} /*END DESKTOP STYLES*/
