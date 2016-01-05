@@ -1,9 +1,9 @@
-<?php
+<?
 if (array_key_exists('messageFF', $_POST)) {
    $to = 'julianaboka@gmail.com';
-   $subject = 'Çàïîëíåíà êîíòàêòíàÿ ôîðìà ñ '.$_SERVER['HTTP_REFERER'];
+   $subject = 'Ã‡Ã Ã¯Ã®Ã«Ã­Ã¥Ã­Ã  ÃªÃ®Ã­Ã²Ã ÃªÃ²Ã­Ã Ã¿ Ã´Ã®Ã°Ã¬Ã  Ã± '.$_SERVER['HTTP_REFERER'];
    $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
-   $message = "Èìÿ: ".$_POST['nameFF']."\nEmail: ".$_POST['contactFF']."\nIP: ".$_SERVER['REMOTE_ADDR']."\nÑîîáùåíèå: ".$_POST['messageFF'];
+   $message = "ÃˆÃ¬Ã¿: ".$_POST['nameFF']."\nEmail: ".$_POST['contactFF']."\nIP: ".$_SERVER['REMOTE_ADDR']."\nÃ‘Ã®Ã®Ã¡Ã¹Ã¥Ã­Ã¨Ã¥: ".$_POST['messageFF'];
    $headers = 'Content-type: text/plain; charset="utf-8"';
    $headers .= "MIME-Version: 1.0\r\n";
    $headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";

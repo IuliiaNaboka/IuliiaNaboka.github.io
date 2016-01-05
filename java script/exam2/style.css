@@ -214,25 +214,85 @@ div#carousel {
 }
 figure#spinner {
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     height: 300px;
     transform-origin: 50% 50% -500px;
+    -webkit-transform-origin: 50% 50% -500px;
+    -moz-transform-origin: 50% 50% -500px;
+    -o-transform-origin: 50% 50% -500px;
+    -ms-transform-origin: 50% 50% -500px;
     transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
 }
 figure#spinner img {
     width: 40%; max-width: 425px;
     position: absolute; left: 30%;
     transform-origin: 50% 50% -500px;
+    -webkit-transform-origin: 50% 50% -500px;
+    -moz-transform-origin: 50% 50% -500px;
+    -o-transform-origin: 50% 50% -500px;
+    -ms-transform-origin: 50% 50% -500px;
     outline:1px solid transparent;
 }
-figure#spinner img:nth-child(1) { transform:rotateY(0deg);
+figure#spinner img:nth-child(1) {
+    transform:rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
 }
-figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
-figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
-figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
-figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
-figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
-figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
-figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+figure#spinner img:nth-child(2) {
+    transform: rotateY(-45deg);
+    -webkit-transform: rotateY(-45deg);
+    -moz-transform: rotateY(-45deg);
+    -o-transform: rotateY(-45deg);
+    -ms-transform: rotateY(-45deg);
+}
+figure#spinner img:nth-child(3) {
+    transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+}
+figure#spinner img:nth-child(4) {
+    transform: rotateY(-135deg);
+    -webkit-transform: rotateY(-135deg);
+    -moz-transform: rotateY(-135deg);
+    -o-transform: rotateY(-135deg);
+    -ms-transform: rotateY(-135deg);
+}
+figure#spinner img:nth-child(5){
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+}
+figure#spinner img:nth-child(6){
+    transform: rotateY(-225deg);
+    -webkit-transform: rotateY(-225deg);
+    -moz-transform: rotateY(-225deg);
+    -o-transform: rotateY(-225deg);
+    -ms-transform: rotateY(-225deg);
+}
+figure#spinner img:nth-child(7){
+    transform: rotateY(-270deg);
+    -webkit-transform: rotateY(-270deg);
+    -moz-transform: rotateY(-270deg);
+    -o-transform: rotateY(-270deg);
+    -ms-transform: rotateY(-270deg);
+}
+figure#spinner img:nth-child(8){
+    transform: rotateY(-315deg);
+    -webkit-transform: rotateY(-315deg);
+    -moz-transform: rotateY(-315deg);
+    -o-transform: rotateY(-315deg);
+    -ms-transform: rotateY(-315deg);
+}
 div#carousel ~ span {
     color: #2caba7;
     margin: 5%;
@@ -240,6 +300,9 @@ div#carousel ~ span {
     text-decoration: none;
     font-size: 2rem;
     transition: 0.6s color;
+    -webkit-transition: 0.6s color;
+    -moz-transition: 0.6s color;
+    -o-transition: 0.6s color;
     position: relative;
     margin-top: -6rem;
     border-bottom: none;
@@ -249,7 +312,6 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 #feedback-form {
     max-width: 400px;
     padding: 2%;
-   /* margin-left: 30%; */
     border-radius: 3px;
     background: #353030;
     color: #dfdfdf;
@@ -419,16 +481,8 @@ footer {
         top: 20px;
         left: 15%;
     }
-  /*  .itemSkills h3 {
-        padding-bottom:
-    }
-    .itemSkills p{
-        padding: ;
-        line-height: ;
-        font-size: ;
-    } */
-    /*SERVICES*/
-     .serviceBan {
+      /*SERVICES*/
+    .serviceBan {
         background: url("images/servicesBannerMob.jpg") no-repeat;
         height: 180px;
         background-size: cover;
@@ -446,9 +500,6 @@ footer {
         display: block;
         width: 95%;
         padding: 10px 15px 10px 15px;
-    /*    margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 40px;   */
     }
     .services h2 {
         padding: 20px 0 10px 30px;
@@ -470,6 +521,10 @@ footer {
         display: inline-block;
         margin: 12px;
         transform: scale(1.1, 1.1);
+        -o-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
     }
 } /*END MOBILE STYLES*/
 
@@ -478,7 +533,6 @@ footer {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     h2 {
         font-size: 1.8em;
-      /*  padding-bottom: 10px; */
         padding: 10px 0;
     }
     .decor {
@@ -559,7 +613,6 @@ footer {
     .scope {
         display: inline-block;
         width: 40%;
-      /*  margin-left: 7%;  */
         margin-bottom: 40px;
     }
     /*MY WORK*/
@@ -582,6 +635,11 @@ footer {
         display: inline-block;
         margin: 12px;
         transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+        -moz-transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2);
+        
     }
 } /*END TABLET STYLES*/
 
